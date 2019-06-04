@@ -7,13 +7,13 @@ The images use https://hub.docker.com/_/centos/[centos:7] as the base image.
 A list of all published Docker images and tags is available at
 https://www.docker.elastic.co[www.docker.elastic.co]. The source files
 are in
-https://github.com/elastic/elasticsearch/blob/{branch}/distribution/docker[Github].
+https://github.com/elastic/elasticsearch/blob/{branch}/distribution/docker[GitHub].
 
-These images are free to use under the Elastic license. They contain open source 
-and free commercial features and access to paid commercial features.  
-{xpack-ref}/license-management.html[Start a 30-day trial] to try out all of the 
-paid commercial features. See the 
-https://www.elastic.co/subscriptions[Subscriptions] page for information about 
+These images are free to use under the Elastic license. They contain open source
+and free commercial features and access to paid commercial features.
+{xpack-ref}/license-management.html[Start a 30-day trial] to try out all of the
+paid commercial features. See the
+https://www.elastic.co/subscriptions[Subscriptions] page for information about
 Elastic license levels.
 
 ==== Pulling the image
@@ -35,9 +35,9 @@ ifeval::["{release-state}"!="unreleased"]
 docker pull {docker-repo}:{version}
 --------------------------------------------
 
-Alternatively, you can download other Docker images that contain only features 
-available under the Apache 2.0 license. To download the images, go to 
-https://www.docker.elastic.co[www.docker.elastic.co]. 
+Alternatively, you can download other Docker images that contain only features
+available under the Apache 2.0 license. To download the images, go to
+https://www.docker.elastic.co[www.docker.elastic.co].
 
 endif::[]
 
@@ -284,8 +284,8 @@ docker run -ti -v /usr/share/elasticsearch/data elasticsearch-custom
 --------------------------------------------
 
 Some plugins require additional security permissions. You have to explicitly accept
-them either by attaching a `tty` when you run the Docker image and accepting yes at 
-the prompts, or inspecting the security permissions separately and if you are 
+them either by attaching a `tty` when you run the Docker image and accepting yes at
+the prompts, or inspecting the security permissions separately and if you are
 comfortable with them adding the `--batch` flag to the plugin install command.
 See {plugins}/_other_command_line_parameters.html[Plugin Management documentation]
 for more details.
